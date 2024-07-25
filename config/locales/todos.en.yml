@@ -1,0 +1,9 @@
+en:
+  todos:
+    errors:
+
+    notice:
+      created: "Task successfully created"
+      updated: "Task successfully updated"
+      done: "Task placed to done"
+      destroyed: "Task successfully removed"

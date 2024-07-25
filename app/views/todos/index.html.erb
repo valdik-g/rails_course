@@ -1,0 +1,10 @@
+<main class="container">
+  <div class="header">
+    <h1>Todos</h1>
+    <%= link_to "New task",
+                new_todo_path,
+                class: "btn btn--primary" %>
+  </div>
+
+  <%= render @todos %>
+</main>

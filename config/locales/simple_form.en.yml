@@ -1,0 +1,14 @@
+en:
+  simple_form:
+    placeholders:
+      todo:
+        task: Label for your task
+    labels:
+      todo:
+        task: Task
+
+  helpers:
+    submit:
+      todo:
+        create: Create todo
+        update: Update todo

@@ -1,0 +1,12 @@
+<div class="todo">
+  <%= link_to todo.task, todo_path(todo) %>
+  <div class="todo__actions">
+    <%= button_to "Delete",
+                  todo_path(todo),
+                  method: :delete,
+                  class: "btn btn--light" %>
+    <%= link_to "Edit",
+                edit_todo_path(todo),
+                class: "btn btn--light" %>
+  </div>
+</div>
