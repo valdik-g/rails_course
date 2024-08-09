@@ -6,10 +6,6 @@ class TodosController < ApplicationController
     @todos = Todo.pending
   end
 
-  def done
-
-  end
-
   def complete
     @todo.update(done: true)
   end
