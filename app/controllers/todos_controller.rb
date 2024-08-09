@@ -1,8 +1,17 @@
 class TodosController < ApplicationController
-  before_action :set_todo, only: [:show, :edit, :update, :destroy]
+  before_action :set_todo, only: [:show, :edit, :update, :destroy, :complete]
 
   def index
-    @todos = Todo.all
+    @done = Todo.done
+    @todos = Todo.pending
+  end
+
+  def done
+
+  end
+
+  def complete
+    @todo.update(done: true)
   end
 
   def show

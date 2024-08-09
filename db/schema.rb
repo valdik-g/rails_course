@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_07_18_140553) do
+ActiveRecord::Schema[7.0].define(version: 2024_08_07_172631) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -18,6 +18,8 @@ ActiveRecord::Schema[7.0].define(version: 2024_07_18_140553) do
     t.string "task", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "due_date_enum", default: 0
+    t.boolean "done", default: false
   end
 
 end
